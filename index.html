@@ -56,6 +56,8 @@
                   <a href="index.html">Home</a>
                   <a href="about.html">Projects</a>
                   <a href="gallery.html">Certificate</a>
+                  <a href="gallery.html">Education</a>
+                  <a href="gallery.html">Certificate</a>
                   <a href="service.html">Price</a>
                   <a href="blog.html">Contact</a>
                 </div>
@@ -69,9 +71,30 @@
   <div class="row" style="margin-left:0">
     <div class="col-md-3">
       <div class="profile">
-        <div class="profile-header">Profile</div>
-        <div class="profile-content"></div></div>
+        <div class="profile-header">
+            <img src="images/Profile.jpg" class="profile-picture" draggable="false" width="100"/>
+            <div class="profile-title mt-2">
+              <p>.Net Developer</p>
+              <p>K2 Developer</p>
+              <p>Mendix Developer</p>
+            </div>
+        </div>
+        <div class="profile-content">
+          <div class="profile-domicile"></div>
+          <div class="profile-skill">
+            <div class="language mb-3">
+              <canvas id="languageChart" style="width:100%;max-width:300px"></canvas>
+            </div>
+            <div class="key-skill">
+              <canvas id="skillChart1" style="height: 100%; width: 100%;"></canvas>
+            </div>
+          </div>
+        </div>
+        <div class="profile-footer">
+          
+        </div>
       </div>
+    </div>
     <div class="col-md-9">
       <!-- slider section -->
       <section class="slider_section position-relative">
@@ -587,7 +610,7 @@
       <!-- footer section -->
     </div>
   </div>
-
+  
   <!-- jQery -->
   <script src="js/jquery-3.4.1.min.js"></script>
   <!-- bootstrap js -->
@@ -596,6 +619,83 @@
   <script src="js/ekko-lightbox.min.js"></script>
   <!-- custom js -->
   <script src="js/custom.js"></script>
+  <!-- chart js -->
+  <script src="js/chart.js"></script>
+  
+  <script>
+    languageChart();
+    skillChart1();
+    
+    function languageChart(){
+      var xValues = ["English", "Indonesian"];
+      var yValues = [100, 100];
+      var barColors = [
+        "#00aba9",
+        "#b91d47",
+        "#2b5797",
+        "#e8c3b9",
+        "#1e7145"
+      ];
+      
+      new Chart("languageChart", {
+        type: "pie",
+        data: {
+          labels: xValues,
+          datasets: [{
+            backgroundColor: barColors,
+            data: yValues
+          }]
+        },
+        options: {
+          title: {
+            display: true,
+            text: "Language Proficiency"
+          }
+        }
+      });
+    };
+    
+    function skillChart1(){
+        var xValues = ["C#", "K2", "Mendix", "HTML, CSS, JQuery", "SQL", "NoSQL", "Azure Logic Apps", ""];
+        var a = 100;
+        var b = 100;
+        var c = 90;
+        var d = 100;
+        var e = 100;
+        var f = 100;
+        var g = 95;
+        var z = 0;
+        var yValues = [a, b, c, d, e, f, g, z];
+        var barColors = [
+            "#FF9130",
+            "#70af3f",
+            "#0590d4",
+            "#689ba6",
+            "#9fa0a2",
+            "#0a7353",
+            "#0d5298",
+            "#FF9130"
+        ];
+
+        new Chart("skillChart1", {
+            type: "horizontalBar",
+            data: {
+                labels: xValues,
+                datasets: [{
+                    backgroundColor: barColors,
+                    data: yValues
+                }]
+            },
+            options: {
+                legend: { display: false },
+                responsive: true,
+                title: {
+                    display: false,
+                }
+            }
+        });
+    };
+  </script>
 
 </body>
 
