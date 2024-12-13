@@ -981,6 +981,9 @@ a:focus {
 body {
   background-color: #191923;
 }
+.fa {
+  margin-right:5px;
+}
 .profile {
   position:fixed;
 	height:100%;
@@ -1005,14 +1008,31 @@ body {
   font-weight: 300;
   letter-spacing:.5px;
 }
-.profile .profile-content {
+.profile-domicile {
+  font-size: 11px;
+  padding:0 45px;
+}
+.profile-domicile .domicile-answer {
+  color:#8c8c8e;
+}
+.profile-content {
   overflow-y:auto;
   overflow-x: hidden;
   max-width:320px;
   height:62%;
+  scrollbar-width: none; /* hide vertical scrollbar for Firefox */
+  -ms-overflow-style: none;  /* hide vertical scrollbar for Internet Explorer 10+ */
 }
-
-#skillChart1 {
-  /*height:10px !important;*/
+.profile-content::-webkit-scrollbar { /* hide vertical scrollbar for webkit/chrome */
+  width:0;
+  height:0;
+}
+.profile-skill, .profile-skill .key-skill {
+  border-top:1px solid #22222e;
+}
+.other-skill {
+  border-top:1px solid #22222e;
+  padding:10px;
+  font-size:11px;
 }
 /* ENDREGION CUSTOM STYLE */

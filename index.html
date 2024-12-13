@@ -69,9 +69,9 @@
     </header>
     <!-- end header section --></div>
   <div class="row" style="margin-left:0">
-    <div class="col-md-3">
+    <div class="col-lg-3 col-md-3 col-sm-3">
       <div class="profile">
-        <div class="profile-header">
+        <div class="profile-header mb-3">
             <img src="images/Profile.jpg" class="profile-picture" draggable="false" width="100"/>
             <div class="profile-title mt-2">
               <p>.Net Developer</p>
@@ -80,22 +80,51 @@
             </div>
         </div>
         <div class="profile-content">
-          <div class="profile-domicile"></div>
+          <div class="profile-domicile mb-3">
+            <div class="row">
+              <div class="col-lg-6 col-md-6 col-sm-6">
+                <p class="mb-1">Domicile:</p>
+                <p class="mb-1">City:</p>
+              </div>
+              <div class="col-lg-6 col-md-6 col-sm-6" style="text-align:right">
+                <p class="domicile-answer mb-1">Indonesia</p>
+                <p class="domicile-answer mb-1">Bekasi</p>
+              </div>
+            </div>
+          </div>
           <div class="profile-skill">
             <div class="language mb-3">
               <canvas id="languageChart" style="width:100%;max-width:300px"></canvas>
             </div>
-            <div class="key-skill">
-              <canvas id="skillChart1" style="height: 100%; width: 100%;"></canvas>
+            <div class="key-skill mb-3">
+              <canvas id="skillChart1" style="height: 300px; width: 100%;"></canvas>
+            </div>
+            <div class="other-skill">
+              <p class="mb-2" style="text-align:center; font-size:12px; font-weight:600;">Other Skills</p>
+              <div class="row">
+                <div class="col-lg-7 col-md-7 col-sm-7">
+                  <p class="mb-1"><i class="fa fa-check"></i><span style="color:#8c8c8e">Blazor</span></p>
+                  <p class="mb-1"><i class="fa fa-check"></i><span style="color:#8c8c8e">Bootstrap UI</span></p>
+                  <p class="mb-1"><i class="fa fa-check"></i><span style="color:#8c8c8e">Elsa Workflow</span></p>
+                  <p class="mb-1"><i class="fa fa-check"></i><span style="color:#8c8c8e">Workflow Core</span></p>
+                  <p class="mb-1"><i class="fa fa-check"></i><span style="color:#8c8c8e">Microsoft Rule Engine</span></p>
+                </div>
+                <div class="col-lg-5 col-md-5 col-sm-5">
+                  <p class="mb-1"><i class="fa fa-check"></i><span style="color:#8c8c8e">Iron PDF</span></p>
+                  <p class="mb-1"><i class="fa fa-check"></i><span style="color:#8c8c8e">Iron Excel</span></p>
+                  <p class="mb-1"><i class="fa fa-check"></i><span style="color:#8c8c8e">Privy</span></p>
+                  <p class="mb-1"><i class="fa fa-check"></i><span style="color:#8c8c8e">Sharepoint</span></p>
+                  <p class="mb-1"><i class="fa fa-check"></i><span style="color:#8c8c8e">Git knowledge</span></p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
         <div class="profile-footer">
-          
         </div>
       </div>
     </div>
-    <div class="col-md-9">
+    <div class="col-lg-9 col-md-9 col-sm-9">
       <!-- slider section -->
       <section class="slider_section position-relative">
         <div id="customCarousel1" class="carousel slide" data-ride="carousel">
@@ -643,29 +672,33 @@
           labels: xValues,
           datasets: [{
             backgroundColor: barColors,
-            data: yValues
+            data: yValues,
+            fontColor: "white"
           }]
         },
         options: {
           title: {
             display: true,
-            text: "Language Proficiency"
+            text: "Language Proficiency",
+            fontColor: "white"
           }
         }
       });
     };
     
     function skillChart1(){
-        var xValues = ["C#", "K2", "Mendix", "HTML, CSS, JQuery", "SQL", "NoSQL", "Azure Logic Apps", ""];
+        var xValues = ["C#", "K2", "Mendix", "HTML, CSS, JQuery", "SQL", "NoSQL", "Azure Logic Apps", "Dev Express", "Telerik Kendo UI"];
         var a = 100;
         var b = 100;
         var c = 90;
         var d = 100;
         var e = 100;
-        var f = 100;
+        var f = 95;
         var g = 95;
+        var h = 85;
+        var i = 85;
         var z = 0;
-        var yValues = [a, b, c, d, e, f, g, z];
+        var yValues = [a, b, c, d, e, f, g, h, i, z];
         var barColors = [
             "#FF9130",
             "#70af3f",
@@ -674,6 +707,8 @@
             "#9fa0a2",
             "#0a7353",
             "#0d5298",
+            "#ef7d18",
+            "#59de00",
             "#FF9130"
         ];
 
@@ -683,14 +718,17 @@
                 labels: xValues,
                 datasets: [{
                     backgroundColor: barColors,
-                    data: yValues
+                    data: yValues,
+                    fontColor: "#fff"
                 }]
             },
             options: {
                 legend: { display: false },
                 responsive: true,
                 title: {
-                    display: false,
+                    display: true,
+                    text: "Key Skills",
+                    fontColor: "white"
                 }
             }
         });
