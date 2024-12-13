@@ -992,11 +992,13 @@ body {
   padding:10px 0;
   color:#fff;
 }
+.profile > div {
+  background:linear-gradient(159deg, rgba(37, 37, 50, 0.98) 0%, rgba(35, 35, 45, 0.98) 100%);
+}
 .profile .profile-header {
   /*height:30%;*/
   padding:30px;
   text-align: center;
-  background:linear-gradient(159deg, rgba(37, 37, 50, 0.98) 0%, rgba(35, 35, 45, 0.98) 100%);
 }
 .profile-picture {
   border-radius: 50%;
@@ -1019,7 +1021,7 @@ body {
   overflow-y:auto;
   overflow-x: hidden;
   max-width:320px;
-  height:62%;
+  height:57%;
   scrollbar-width: none; /* hide vertical scrollbar for Firefox */
   -ms-overflow-style: none;  /* hide vertical scrollbar for Internet Explorer 10+ */
 }
@@ -1034,5 +1036,14 @@ body {
   border-top:1px solid #22222e;
   padding:10px;
   font-size:11px;
+}
+.profile-footer {
+  padding:0 40%;
+}
+.profile-footer a {
+  color:#8c8c8e;
+}
+.profile-footer a:hover {
+  color:#fff;
 }
 /* ENDREGION CUSTOM STYLE */
