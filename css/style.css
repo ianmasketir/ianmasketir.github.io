@@ -1038,12 +1038,35 @@ body {
   font-size:11px;
 }
 .profile-footer {
-  padding:0 40%;
+  padding:5px 10px;
 }
 .profile-footer a {
   color:#8c8c8e;
 }
 .profile-footer a:hover {
   color:#fff;
+}
+
+
+@media only screen and (max-width: 575px) { 
+  .profile-footer .row > div {
+    text-align: center !important;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .profile-picture {
+    width:40% !important;
+  }
+  .profile {
+    position: initial;
+    height:auto;
+    width:100%;
+  }
+  .profile-content {
+    max-width: initial;
+  }
+  #languageChart {
+    max-width:600px !important;
+  }
 }
 /* ENDREGION CUSTOM STYLE */
