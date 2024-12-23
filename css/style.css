@@ -981,6 +981,9 @@ a:focus {
 body {
   background-color: #191923;
 }
+.text-right {
+  text-align:right;
+}
 .fa {
   margin-right:5px;
 }
@@ -1046,11 +1049,24 @@ body {
 .profile-footer a:hover {
   color:#fff;
 }
+.profile-footer .mobile-link .content {
+  width:50%;
+  padding: 0 15px;
+}
+.profile-footer .mobile-link a {
+  font-size: xx-large;
+}
 
 
 @media only screen and (max-width: 575px) { 
   .profile-footer .row > div {
     text-align: center !important;
+  }
+  .profile-footer .mobile-link {
+    display: flex !important;
+  }
+  .profile-footer .row {
+    display: none;
   }
 }
 @media only screen and (max-width: 800px) {
