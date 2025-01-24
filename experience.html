@@ -37,6 +37,15 @@
       color: #bcd0f7;
       background: #1A233A;
     }
+    
+    @media only screen and (max-width: 768px) { 
+      #BigTitle {
+        display:none;
+      }
+      #MediumTitle {
+        display: block !important;
+      }
+    }
   </style>
 </head>
 
@@ -95,7 +104,8 @@
                 </div>
                 <div class="timeline-content">
                   <i class="icon-attachment"></i>
-                  <h4>Intikom Berlian Mustika</h4>
+                  <h4 id="BigTitle">Intikom Berlian Mustika</h4>
+                  <h3 id="MediumTitle">Intikom Berlian Mustika</h3>
                   <div class="mb-3" style="text-align: center;">
                     <img draggable="false" class="img-fluid rounded" src="images/intikom_logo.png" alt="Intikom Berlian Mustika" style="width: 50%;">
                   </div>
@@ -114,7 +124,8 @@
                 </div>
                 <div class="timeline-content">
                   <i class="icon-attachment"></i>
-                  <h4>Prima Integrasi Solusindo</h4>
+                  <h4 id="BigTitle">Prima Integrasi Solusindo</h4>
+                  <h3 id="MediumTitle" style="display: none;">Prima Integrasi Solusindo</h3>
                   <div class="mb-3" style="text-align: center;">
                     <img draggable="false" class="img-fluid rounded" src="images/prima_integrasi_logo.jpg" alt="Prima Integrasi Solusindo">
                   </div>
