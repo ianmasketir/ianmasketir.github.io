@@ -37,6 +37,19 @@
       color: #bcd0f7;
       background: #1A233A;
     }
+    #MediumTitle {
+      white-space: normal;
+      word-break: break-word;
+    }
+    
+    @media only screen and (max-width: 768px) { 
+      #BigTitle {
+        display:none;
+      }
+      #MediumTitle {
+        display: block !important;
+      }
+    }
   </style>
 </head>
 
@@ -95,7 +108,8 @@
                 </div>
                 <div class="timeline-content">
                   <i class="icon-attachment"></i>
-                  <h4>Indocyber Global Technology</h4>
+                  <h4 id="BigTitle">Indocyber Global Technology</h4>
+                  <h3 id="MediumTitle" style="display: none;">Indocyber Global Technology</h3>
                   <p>Bootcamp .Net</p>
                   <div class="mb-3" style="text-align: center;">
                     <img draggable="false" class="img-fluid rounded" src="images/iglo_logo.png" alt="Indocyber Global Technology" style="width: 50%; border-radius: 50% !important;">
@@ -109,7 +123,8 @@
                 </div>
                 <div class="timeline-content">
                   <i class="icon-turned_in_not"></i>
-                  <h4>Jaya Harapan Solusindo</h4>
+                  <h4 id="BigTitle">Jaya Harapan Solusindo</h4>
+                  <h3 id="MediumTitle" style="display: none;">Jaya Harapan Solusindo</h3>
                   <p>Bootcamp .Net</p>
                 </div>
               </div>
@@ -120,7 +135,8 @@
                 </div>
                 <div class="timeline-content">
                   <i class="icon-attachment"></i>
-                  <h4>Bina Nusantara University</h4>
+                  <h4 id="BigTitle">Bina Nusantara University</h4>
+                  <h3 id="MediumTitle" style="display: none;">Bina Nusantara University</h3>
                   <p>Majoring Computer Science</p>
                   <div class="mb-3">
                     <img draggable="false" class="img-fluid rounded" src="images/binus_logo.png" alt="Universitas Bina Nusantara" style="width: 50%;">
@@ -137,7 +153,8 @@
                 </div>
                 <div class="timeline-content">
                   <i class="icon-attachment"></i>
-                  <h4>SMAN 42 Jakarta</h4>
+                  <h4 id="BigTitle">SMAN 42 Jakarta</h4>
+                  <h3 id="MediumTitle" style="display: none;">SMAN 42 Jakarta</h3>
                   <p>Majoring Science (IPA)</p>
                   <div class="mb-3" style="text-align: center;">
                     <img draggable="false" class="img-fluid rounded" src="images/sman_42_logo.png" alt="SMAN 42 Jakarta" style="width: 50%;">
