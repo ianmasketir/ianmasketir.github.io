@@ -1279,6 +1279,9 @@ body {
   .profile-footer .row {
     display: none;
   }
+  .certificate #k2dev {
+    width: 110% !important;
+  }
 }
 @media only screen and (max-width: 800px) {
   .profile-picture {
