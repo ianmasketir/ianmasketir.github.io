@@ -13,7 +13,7 @@
   <meta name="author" content="" />
   <link rel="icon" href="images/favicon.ico" type="image/ico" />
 
-  <title>Certificate - Ianmasketir</title>
+  <title>Contact - Ianmasketir</title>
 
   <!-- bootstrap core css -->
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
@@ -30,6 +30,12 @@
   <link href="css/style.css" rel="stylesheet" />
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
+
+  <style>
+    .whatsapp:hover * {
+      color:#0c0c0c !important;
+    }
+  </style>
 
 </head>
 
@@ -75,26 +81,49 @@
     <div class="container-fluid">
       <div class="heading_container heading_center">
         <h2>
-          Certificate
+          Contact
         </h2>
-        <h5>Click on a certificate you want to download</h5>
+        <h5>Contact me with one of the following media</h5>
       </div>
       <div class="container certificate">
         <div class="row content">
-          <div class="col-sm-12 col-md-4 col-lg-4 mb-3" style="text-align: center; display: flex; align-items: center;">
-            <a id="toefl" href="files/TOEFL.pdf" style="display: block;">
-              <img draggable="false" src="images/TOEFL_Logo.svg" title="Download TOEFL Certificate" alt="TOEFL Certificate" style="width: 100%;" />
-            </a>
+          <div class="col-sm-12 col-md-6 col-lg-6 mb-3" style="text-align: center; ">
+            <div class="mb-3">
+              <a class="linkedin" href="https://id.linkedin.com/in/taufiq-fitriansyah-6a1623139" title="LinkedIn" style="font-size: 35pt;">
+                <i class="fa fa-linkedin"></i>
+                <span style="position: relative; top: 2px; color:#0c0c0c;">Taufiq Fitriansyah</span>
+              </a>
+            </div>
+            <div>
+              <a class="whatsapp" href="https://wa.me/+6281959708598" title="WhatsApp" style="font-size: 35pt;">
+                <i class="fa fa-whatsapp" style="color: #24b25b;"></i>
+                <span style="position: relative; top: 2px; color:#0c0c0c;">+62 81959708598</span>
+              </a>
+            </div>
           </div>
-          <div class="col-sm-12 col-md-4 col-lg-4 mb-3" style="text-align: center; display: flex; align-items: center;">
-            <a id="k2core" href="files/K2 Five Core Certificate (2021)_Taufiq Fitriansyah.pdf" style="display: block;">
-              <img draggable="false" src="images/K2_Five_Core_Badge.png" title="Download K2 Five Core Certificate" alt="K2 Five Core Certificate" style="width: 50%;" />
-            </a>
-          </div>
-          <div class="col-sm-12 col-md-4 col-lg-4 mb-3" style="text-align: center; display: flex; align-items: center;">
-            <a id="k2dev" href="files/K2 IT Developer Certificate (2021)_Taufiq Fitriansyah.pdf" style="display: block;">
-              <img draggable="false" src="images/Nintex_logo.png" title="Download K2 IT Developer Certificate" alt="K2 IT Developer Certificate" style="width: 100%;" />
-            </a>
+          <div class="col-sm-12 col-md-6 col-lg-6 mb-3">
+            <h5 style="text-align: center;">EMAIL</h5>
+            <form id="FormEmail" method="post" enctype="text/plain">
+              <div class="row mb-3">
+                <div class="col-sm-3 col-md-3 col-lg-3">
+                  <label>Subject</label>
+                </div>
+                <div class="col-sm-9 col-md-9 col-lg-9">
+                  <input type="text" id="Subject" class="form-control" />
+                </div>
+              </div>
+              <div class="row mb-3">
+                <div class="col-sm-3 col-md-3 col-lg-3">
+                  <label>Message</label>
+                </div>
+                <div class="col-sm-9 col-md-9 col-lg-9">
+                  <textarea name="Message" id="Message" rows="4" class="form-control"></textarea>
+                </div>
+              </div>
+              <div style="text-align: right;">
+                <button class="btn btn-primary btn-submit">Send</a>
+              </div>
+            </form>
           </div>
         </div>
       </div>
@@ -139,6 +168,19 @@
   <script src="js/ekko-lightbox.min.js"></script>
   <!-- custom js -->
   <script src="js/custom.js"></script>
+
+  <script>
+    //$("#FormEmail").submit(function(e){
+    $(".btn-submit").click(function(){
+      //e.preventDefault();
+      debugger;
+      var subject = $("#Subject").val();
+      var message = $("#Message").val();
+      var action = 'mailto:v-taufiq@yopmail.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(message);
+      $("#FormEmail").attr("action", action);
+      $("#FormEmail")[0].submit();
+    });
+  </script>
 
 </body>
 
