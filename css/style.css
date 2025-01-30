@@ -1024,7 +1024,7 @@ body {
   overflow-y:auto;
   overflow-x: hidden;
   max-width:320px;
-  height:57%;
+  height:56%;
   scrollbar-width: none; /* hide vertical scrollbar for Firefox */
   -ms-overflow-style: none;  /* hide vertical scrollbar for Internet Explorer 10+ */
 }
@@ -1050,11 +1050,14 @@ body {
   color:#fff;
 }
 .profile-footer .mobile-link .content {
-  width:50%;
+  width:33.33%;
   padding: 0 15px;
 }
 .profile-footer .mobile-link a {
   font-size: xx-large;
+}
+.slider_section .img-container img {
+  position:relative;
 }
 
 /* REGION TIMELINE */
