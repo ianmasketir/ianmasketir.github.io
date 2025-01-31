@@ -31,6 +31,40 @@
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
 
+  <style>
+    .box .detail-box{
+      background-color: #3a3f58;
+      color: #fff;
+      padding: 20px;
+    }
+    .box .img-box{
+      position: relative;
+      width: 145px;
+      height: 145px;
+      margin-bottom: -72.5px;
+      background-color: #fff;
+      border: 1px solid #fff;
+      border-radius: 100%;
+      z-index: 5;
+      bottom:55px;
+      left: 60px;
+    }
+    .box .icon{
+      font-size: 100pt;
+      color: #e45441 !important;
+      position: relative;
+      /*top: -25px;*/
+      left: 3px;
+      bottom:20px;
+    }
+    .box a.icon{
+      cursor: pointer;
+    }
+    .box a.icon:hover{
+      color: #9f3a2d !important;
+    }
+  </style>
+
 </head>
 
 <body>
@@ -272,6 +306,16 @@
             </div>
             <div class="col-md-3 mb-3">
               <div class="img-container">
+                <img src="images/sql_logo.png" alt="" width="60%" style="top: 20px;">
+              </div>
+            </div>
+            <div class="col-md-3 mb-3">
+              <div class="img-container">
+                <img src="images/no_sql_logo.png" alt="" width="60%">
+              </div>
+            </div>
+            <div class="col-md-3 mb-3">
+              <div class="img-container">
                 <img src="images/swagger_logo.png" alt="" width="80%" style="top: 20px;">
               </div>
             </div>
@@ -325,6 +369,78 @@
         </div>
       </section>
       <!-- end client section -->
+    
+      <!-- service section -->
+      <section class="slider_section layout_padding" style="background-color: #fff; padding: 50px 0; border-top: 5px solid #ff5104;">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 heading_container mb-5">
+              <h2 style="width: 100%;">Services</h2>
+            </div>
+            <div class="col-md-4" style="margin-bottom: 70px;">
+              <div class="box">
+                <div class="img-box">
+                  <a href="service.html" title="View detail" class="icon"><i class="fa fa-clock-o"></i></a>
+                </div>
+                <div class="detail-box">
+                  <h5 class="my-0">
+                    Full-Time
+                  </h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4" style="margin-bottom: 70px;">
+              <div class="box">
+                <div class="img-box">
+                  <a href="service.html" title="View detail" class="icon" style="font-size: 75pt; top: -3px;"><i class="fa fa-calendar"></i></a>
+                </div>
+                <div class="detail-box">
+                  <h5 class="my-0">
+                    Part-Time
+                  </h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-3" style="margin-bottom: 70px;">
+              <div class="box">
+                <div class="img-box">
+                  <a href="service.html" title="View detail" class="icon" style="font-size: 75pt; top: -3px;"><i class="fa fa-graduation-cap"></i></a>
+                </div>
+                <div class="detail-box">
+                  <h5 class="my-0">
+                    Bootcamp Tutor
+                  </h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-3" style="margin-bottom: 70px;">
+              <div class="box">
+                <div class="img-box">
+                  <a href="service.html" title="View detail" class="icon" style="font-size: 85pt; top: -15px;"><i class="fa fa-user"></i></a>
+                </div>
+                <div class="detail-box">
+                  <h5 class="my-0">
+                    Private Teacher
+                  </h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3" style="margin-bottom: 70px;">
+              <div class="box" style="width: 138%;">
+                <div class="img-box">
+                  <a href="service.html" title="View detail" class="icon" style="font-size: 75pt; top: -3px;"><i class="fa fa-users"></i></a>
+                </div>
+                <div class="detail-box">
+                  <h5 class="my-0">
+                    Group Study Teacher
+                  </h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end service section -->
 
       <!-- info section -->
       <section class="info_section innerpage_info_section" style="text-align: center; padding: 10px 0;">
