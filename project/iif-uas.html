@@ -113,21 +113,21 @@
           <div class="col-sm-12 col-lg-12">
             <div class="row">
               <div class="col-sm-3 col-lg-3" style="display: flex; align-items: center;">
-                <img draggable="false" src="../images/Privy_logo.png" alt="" width="100%">
+                <img draggable="false" src="../images/logic_apps_logo.png" alt="" width="100%">
               </div>
               <div class="col-sm-9 col-lg-9">
                 <div class="box" style="display: block; margin: 0;">
                   <div class="heading_container mb-3">
                     <h2 class="text-left" style="width: 100%;">
-                      IIF Invoice Creation
+                      IIF Unified Approval System
                       <div>
-                        <span class="badge badge-pill">Dec 2023</span>
+                        <span class="badge badge-pill">Jan 2023 - Dec 2024</span>
                       </div>
                     </h2>
                   </div>
                   <div class="detail-box" style="padding: 0;">
                     <p class="justify my-0">
-                      Application for PT. Indonesia Infrastructure Finance to generate invoice.<br>
+                      Approval system for PT. Indonesia Infrastructure Finance.<br>
                       Client: <a href="https://iif.co.id/id/tentang-kami/ikhtisar/" target="_blank" title="See profile" style="border:none; padding:0; background: initial; color:#0089de; font-weight: 600;">PT. Indonesia Infrastructure Finance</a><br>
                       Method: Agile Development<br>
                     </p>
@@ -143,10 +143,9 @@
                       <p class="my-0">Tools used:</p>
                       <ul class="px-3" style="display: grid; grid-template-columns: repeat(3, 1fr);">
                         <li style="list-style: circle;"><p class="my-0">C# (.Net Core 6.x)</p></li>
-                        <li style="list-style: circle;"><p class="my-0">SQL Server</p></li>
-                        <li style="list-style: circle;"><p class="my-0">
-                          <a href="https://privy.id/id" target="_blank" title="See profile" style="border:none; padding:0; background: initial; color:inherit">Privy Digital Signature</a>
-                        </p></li>
+                        <li style="list-style: circle;"><p class="my-0">PostgreSQL</p></li>
+                        <li style="list-style: circle;"><p class="my-0">Microsoft Logic Apps</p></li>
+                        <li style="list-style: circle;"><p class="my-0">Microsoft Azure CosmosDb (No-SQL)</p></li>
                       </ul>
                     </div>
                   </div>
@@ -159,7 +158,19 @@
           <div class="col-sm-12 col-lg-12 box mt-0" style="display: block;">
             <div class="detail-box">
               <div class="content-wrapper">
-                <p>In this application, contract's Invoice can be generated via web api with Digital Signature either as PDF or directly viewed.</p>
+                <p>In this application, any request from any application will be processed 
+                  then notification will be sent via Microsoft Teams (using Adaptive Card) and email to the corresponding flow's PIC.
+                </p>
+              </div>
+              <div class="content-wrapper">
+                <p class="my-0">
+                  Module:
+                </p>
+                <ol class="px-3" style="color: #444;">
+                  <li><p class="my-0">Submit Request</p></li>
+                  <li><p class="my-0">Approval</p></li>
+                  <li><p class="my-0">Notification</p></li>
+                </ol>
               </div>
             </div>
           </div>
