@@ -1280,22 +1280,29 @@ body {
 
   #Home #Client #IIF {
     width: 100% !important;
+    background: transparent !important;
   }
   #Home #Client #Maybank {
     width: 100% !important;
+    background: transparent !important;
   }
   #Home #Client #Permata {
     width: 100% !important;
     bottom: -20px !important;
+    background: transparent !important;
   }
   #Home #Client #TMMIN {
     width: 100% !important;
+    bottom: 130px !important;
+    background: transparent !important;
   }
   #Home #Client #Intikom {
-    width: 90% !important;
+    width: 70% !important;
+    bottom: 130px !important;
+    background: transparent !important;
   }
 
-  #Home #Services {
+  #Home #Services h5 {
     display: block;
   }
   #Home #Services .img-box {
