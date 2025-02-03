@@ -1283,8 +1283,16 @@ body {
   }
   #Home #Client #Maybank {
     width: 100% !important;
-    position: relative !important;
-    top: initial !important;
+  }
+  #Home #Client #Permata {
+    width: 100% !important;
+    bottom: 290px !important;
+  }
+  #Home #Client #TMMIN {
+    width: 100% !important;
+  }
+  #Home #Client #Intikom {
+    width: 100% !important;
   }
 
   #Home #Services {
