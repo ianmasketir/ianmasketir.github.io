@@ -1281,6 +1281,9 @@ body {
   #Home #Services {
     display: block;
   }
+  #Home #Services .fullTime{
+    font-size:70pt !important;
+  }
 }
 @media only screen and (max-width: 768px) { 
   .profile-footer .row > div {
