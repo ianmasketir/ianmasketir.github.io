@@ -1285,7 +1285,8 @@ body {
     font-size:50pt !important;
   }
   #Home #Services .fullTime .img-box{
-    left: 80px;
+    left: 90px;
+    bottom: 75px;
   }
 }
 @media only screen and (max-width: 768px) { 
