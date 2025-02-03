@@ -1336,6 +1336,9 @@ body {
     /*top:-2px !important;*/
     bottom:10px;
   }
+  #Home #Services .groupTeacher .box {
+    width: 100% !important;
+  }
   #Home #Services .groupTeacher .icon{
     font-size:53pt !important;
     top:-2px !important;
