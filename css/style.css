@@ -1278,6 +1278,10 @@ body {
     display: none;
   }
 
+  #Home #Client #IIF {
+    width: 100% !important;
+  }
+
   #Home #Services {
     display: block;
   }
@@ -1316,9 +1320,6 @@ body {
     font-size:53pt !important;
     top:-2px !important;
     bottom:10px;
-  }
-  #Home #Services .groupTeacher .detail-box{
-    width: 72%;
   }
 }
 @media only screen and (max-width: 768px) { 
