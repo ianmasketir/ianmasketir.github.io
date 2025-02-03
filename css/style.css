@@ -1282,13 +1282,13 @@ body {
     display: block;
   }
   #Home #Services .img-box {
-    left: 90px;
+    left: 100px;
     bottom: 55px;
     height: 115px;
     width: 115px;
   }
   #Home #Services .fullTime .icon{
-    font-size:80pt !important;
+    font-size:75pt !important;
     bottom:15px;
   }
 }
