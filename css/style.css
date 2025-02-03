@@ -1288,7 +1288,8 @@ body {
     width: 115px;
   }
   #Home #Services .fullTime .icon{
-    font-size:70pt !important;
+    font-size:80pt !important;
+    bottom:15px;
   }
 }
 @media only screen and (max-width: 768px) { 
