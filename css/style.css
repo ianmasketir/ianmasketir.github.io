@@ -1296,10 +1296,16 @@ body {
     top:-2px !important;
     bottom:15px;
   }
+  #Home #Services .bootcampTutor{
+    margin-bottom: 70px !important;
+  }
   #Home #Services .bootcampTutor .icon{
     font-size:53pt !important;
-    top:-2px !important;
+    top:3px !important;
     bottom:15px;
+  }
+  #Home #Services .privateTeacher{
+    margin-bottom: 70px !important;
   }
   #Home #Services .privateTeacher .icon{
     font-size:63pt !important;
