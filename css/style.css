@@ -1344,6 +1344,16 @@ body {
     top:-2px !important;
     bottom:10px;
   }
+
+  .service_section #FullTime .icon {
+    top: -10px;
+  }
+  .service_section #PartTime .icon {
+    top: -15px;
+  }
+  .service_section #PrivateTeacher .icon {
+    top: -20px;
+  }
 }
 @media only screen and (max-width: 768px) { 
   .profile-footer .row > div {
