@@ -1291,6 +1291,10 @@ body {
     font-size:73pt !important;
     bottom:14px;
   }
+  #Home #Services .partTime .icon{
+    font-size:53pt !important;
+    bottom:14px;
+  }
 }
 @media only screen and (max-width: 768px) { 
   .profile-footer .row > div {
