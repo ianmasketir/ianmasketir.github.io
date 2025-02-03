@@ -1349,10 +1349,10 @@ body {
     top: -35px;
   }
   .service_section #PartTime .icon {
-    top: -40px;
+    top: -10px !important;
   }
   .service_section #PrivateTeacher .icon {
-    top: -35px;
+    top: -20px !important;
   }
 }
 @media only screen and (max-width: 768px) { 
