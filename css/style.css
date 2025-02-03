@@ -1281,12 +1281,14 @@ body {
   #Home #Services {
     display: block;
   }
-  #Home #Services .fullTime .icon{
-    font-size:70pt !important;
-  }
-  #Home #Services .fullTime .img-box{
+  #Home #Services .img-box {
     left: 90px;
-    bottom: 75px;
+    bottom: 55px;
+    height: 115px;
+    width: 115px;
+  }
+  #Home #Services .fullTime .icon{
+    font-size:80pt !important;
   }
 }
 @media only screen and (max-width: 768px) { 
