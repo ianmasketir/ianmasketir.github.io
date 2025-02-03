@@ -1281,7 +1281,7 @@ body {
   #Home #Services {
     display: block;
   }
-  #Home #Services .fullTime{
+  #Home #Services .fullTime .icon{
     font-size:50pt !important;
   }
   #Home #Services .fullTime .img-box{
