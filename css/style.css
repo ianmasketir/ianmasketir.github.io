@@ -1303,7 +1303,7 @@ body {
   }
 
   #Home #Services h5 {
-    display: block;
+    display: block !important;
   }
   #Home #Services .img-box {
     left: 110px;
