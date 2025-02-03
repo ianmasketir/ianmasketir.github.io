@@ -1282,7 +1282,10 @@ body {
     display: block;
   }
   #Home #Services .fullTime{
-    font-size:70pt !important;
+    font-size:50pt !important;
+  }
+  #Home #Services .fullTime .img-box{
+    left: 80px;
   }
 }
 @media only screen and (max-width: 768px) { 
