@@ -1346,13 +1346,13 @@ body {
   }
 
   .service_section #FullTime .icon {
-    top: -10px;
+    top: -40px;
   }
   .service_section #PartTime .icon {
-    top: -15px;
+    top: -35px;
   }
   .service_section #PrivateTeacher .icon {
-    top: -20px;
+    top: -30px;
   }
 }
 @media only screen and (max-width: 768px) { 
