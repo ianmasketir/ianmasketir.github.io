@@ -1293,7 +1293,23 @@ body {
   }
   #Home #Services .partTime .icon{
     font-size:53pt !important;
-    bottom:14px;
+    top:-2px !important;
+    bottom:15px;
+  }
+  #Home #Services .bootcampTutor .icon{
+    font-size:53pt !important;
+    top:-2px !important;
+    bottom:15px;
+  }
+  #Home #Services .privateTeacher .icon{
+    font-size:63pt !important;
+    /*top:-2px !important;*/
+    bottom:15px;
+  }
+  #Home #Services .groupTeacher .icon{
+    font-size:53pt !important;
+    top:-2px !important;
+    bottom:15px;
   }
 }
 @media only screen and (max-width: 768px) { 
